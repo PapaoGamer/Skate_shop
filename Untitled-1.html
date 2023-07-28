@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Papão Compras</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #000000;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .product {
+      display: flex;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    .product img {
+      max-width: 150px;
+      margin-right: 10px;
+    }
+
+    .product-info {
+      flex: 1;
+    }
+
+    .custom-button {
+      background-color: #00ff0d;
+      color: #FFFFFF;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .custom-button:hover {
+      background-color: #9bf30d;
+    }
+
+    .whatsapp-button {
+      display: inline-block;
+      background-color: #25D366;
+      color: #FFFFFF;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+      width: 160px;
+      text-align: center;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #069726;
+    }
+
+    .instagram-button {
+      display: inline-block;
+      background-color: #ff0000;
+      color: #FFFFFF;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+      width: 160px;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .instagram-button:hover {
+      background-color: #c70202;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Papeças</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <h1> Seja bem vindo(a) ao site Papeças, onde você encontra peças de skate de qualidade e com baixos
+    valores de compra.</h1>
+  <p>
+    Aqui você encontra shapes com desenhos incríveis, shapes sem desenho para quem queira economizar, lixas
+    emborrachadas,nacionais e muito mais<br>
+    Também vendemos rolamentos de marcas famosas como black sheep e redz bones pra você pegar aquela velocidade e poder
+    lançar as manobras mais bonitas em uma skatepark ou até mesmo na rua para impressionar os amigos.<br>
+  </p>
+  <section id="produtos"></section>
+  <div class="product">
+    <img
+      src="https://images.tcdn.com.br/img/img_prod/735638/shape_de_skate_cisco_marfim_liso_lixa_gratis_229_1_17846943506e1878fd065f34b7d52807.jpg"
+      alt="shape sem desenho">
+    <div class="product-info">
+      <h2>shape sem desenho</h2>
+      <p>shape de cisco de marfim liso sem desenho atrás.</p>
+      <p>Preço: R$150,00</p>
+      <a href="https://www.instagram.com/angelo_miguellll/"<button class="whatsapp-button">Comprar</button></a>
+    </div>
+  </div>
+
+  <div class="product">
+    <img
+      src="https://images.tcdn.com.br/img/img_prod/735638/shape_de_skate_cisco_fiber_decks_makes_hdp_8_25_1857_1_9322d6a50fb469f9d074a5bb6399f9a7.jpeg"
+      alt="shape com desenho">
+    <div class="product-info">
+      <h2>shape com desenho</h2>
+      <p>shape de cisco de marfim liso com desenho atrás.</p>
+      <p>Preço: R$170,00</p>
+      <a href="https://www.instagram.com/angelo_miguellll/"<button class="whatsapp-button">Comprar</button></a>
+    </div>
+  </div>
+
+  <div class="product">
+    <img src="https://www.skatehangar.com/cdn/shop/products/Lixa_Street_Iron_2_-800x800.jpg?v=1507563304" alt="lixa E">
+    <div class="product-info">
+      <h2>lixa emborrachada</h2>
+      <p>lixa emborrachada para skates.</p>
+      <p>Preço: R$20,00</p>
+      <a href="https://www.instagram.com/angelo_miguellll/"<button class="whatsapp-button">Comprar</button></a>
+    </div>
+  </div>
+
+  <div class="product">
+    <img
+      src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/109/588/products/281-49be3f17a09a33053615907067421275-640-0.png"
+      alt="lixa N">
+    <div class="product-info">
+      <h2>lixa nacional</h2>
+      <p>lixa nacional para skates.</p>
+      <p>Preço: R$10,00</p>
+      <a href="https://www.instagram.com/angelo_miguellll/"<button class="whatsapp-button">Comprar</button></a>
+    </div>
+  </div>
+
+  <div class="product">
+    <img
+      src="https://images.tcdn.com.br/img/img_prod/1045635/rolamento_red_bones_599_1_9e3dada7376e12f84d54202c133dc8ad.jpg"
+      alt="Rolamento Redz Bones">
+    <div class="product-info">
+      <h2>Rolamento Red Bones</h2>
+      <p>Rolamentos redz bones para skates.</p>
+      <p>Preço: R$250,00</p>
+      <a href="https://www.instagram.com/angelo_miguellll/"<button class="whatsapp-button">Comprar</button></a>
+    </div>
+  </div>
+
+  <div class="product">
+    <img src="https://cdn.awsli.com.br/2599/2599701/produto/2240713256d078b03e5.jpg" alt="Rolamento black sheep">
+    <div class="product-info">
+      <h2>Rolamentos black sheep</h2>
+      <p>Rolamentos black sheep para skates.</p>
+      <p>Preço: R$100,00</p>
+      <a href="https://www.instagram.com/angelo_miguellll/"<button class="whatsapp-button">Comprar</button></a>
+    </div>
+  </div>
+
+  <div class="product">
+    <img
+      src="https://d3ugyf2ht6aenh.cloudfront.net/stores/087/236/products/roda-moska-rock-50mm1-02c17728e38a4203d116854691091053-480-0.webp"
+      alt="Rodas M">
+    <div class="product-info">
+      <h2>Roda moska</h2>
+      <p>Conjunto de rodinhas da marca moska para skates.</p>
+      <p>Preço: R$200,00</p>
+      <a href="https://www.instagram.com/angelo_miguellll/"<button class="whatsapp-button">Comprar</button></a>
+    </div>
+  </div>
+
+  <div class="product">
+    <img src="https://http2.mlstatic.com/D_NQ_NP_842886-MLB69721428686_052023-O.webp" alt="Truck intruder">
+    <div class="product-info">
+      <h2>Truck intruder</h2>
+      <p>Par de trucks Intruder para skates.</p>
+      <p>Preço: R$250,00</p>
+      <a href="https://www.instagram.com/angelo_miguellll/"<button class="whatsapp-button">Comprar</button></a>
+    </div>
+  </div>
+
+  <div class="product">
+    <img src="https://http2.mlstatic.com/D_NQ_NP_821157-MLB50303231214_062022-O.webp" alt="Truck PGS">
+    <div class="product-info">
+      <h2>Truck PGS</h2>
+      <p>Par de trucks PGS para skates.</p>
+      <p>Preço: R$125,00</p>
+      <a href="https://www.instagram.com/angelo_miguellll/"<button class="whatsapp-button">Comprar</button></a>
+    </div>
+  </div>
+
+  <section id="contato"></section>
+  <h1>Contato para devoluções em caso de má entrega ou produto com defeito:</h1>
+  <p>
+    Lembrando que aceitamos apenas devoluções ou trocas de produtos com defeitos de Fabrica ou que acabou estragando
+    durante a entrega dos mesmos.<br>
+    Não aceitamos devoluções ou trocas sem notas fiscais.<br>
+    <a href="https://www.instagram.com/angelo_miguellll/" class="instagram-button" target="_blank">Aqui meu
+      instagram</a><br>
+
+    <a href="https://api.whatsapp.com/send?phone=5547996626904" class="whatsapp-button" target="_blank">Aqui está o meu
+      zap</a><br>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
